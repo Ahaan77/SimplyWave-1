@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Retro Tradecom</title>
+
+  <style type="text/css">
+  
+
+    body {
+      margin: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: black;
+      font-size: 20px;
+    }
+
+    .split{
+      height: 150%;
+      width: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 10;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .left{
+      left: 0;
+      background-color: white;
+    }
+
+    .right{
+      right: 0;
+      background-color: white;
+    }
+
+    .centered{
+      position:absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+
+    .centered img{
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    /*Me*/
+
+    .navbar{
+      overflow: hidden;
+      background-color: #4169e1;
+      width: 100%;
+    }
+
+    .nav-links {
+      float: right;
+      padding: 50px;  
+    }
+
+    .nav-links a {
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+    }  
+
+    .nav-links a:hover{
+      color: #ffae1a;
+      background-color: #0052cc;
+
+    }
+
+    .nav-logo {
+      float: left;
+      padding: 10px;
+      margin-left: 50px;
+    }
+
+
+.container {
+    position: relative;
+}
+
+.house_G_5 {
+    position: absolute;
+    top: 27%;
+  left: 7%;
+}
+
+.house_G_6 {
+    position: absolute;
+    top: 32%;
+  left: 7%;
+}
+
+.house_G_7 {
+    position: absolute;
+    top: 37%;
+  left: 7%;
+}
+
+.house_G_8 {
+    position: absolute;
+    top: 41.5%;
+  left: 7%;
+}
+
+.house_G_9 {
+    position: absolute;
+    top: 45.5%;
+  left: 7%;
+}
+
+.house_G_4 {
+    position: absolute;
+    top: 26.5%;
+  left: 15.5%;
+}
+
+.house_G_3 {
+    position: absolute;
+    top: 32%;
+  left: 15.5%;
+}
+
+.house_G_2 {
+    position: absolute;
+    top: 37%;
+  left: 15.5%;
+}
+
+.house_G_1 {
+    position: absolute;
+    top: 42%;
+  left: 15.5%;
+}
+
+.house_F_5 {
+    position: absolute;
+    top: 26.5%;
+  left: 19.5%;
+}
+
+.house_F_6 {
+    position: absolute;
+    top: 32%;
+  left: 19.5%;
+}
+
+.house_F_7 {
+    position: absolute;
+    top: 37%;
+  left: 19.5%;
+}
+
+.house_F_8 {
+    position: absolute;
+    top: 42%;
+  left: 19.5%;
+}
+
+.house_F_4 {
+    position: absolute;
+    top: 26.5%;
+  left: 24%;
+}
+
+.house_F_3 {
+    position: absolute;
+    top: 32%;
+  left: 24%;
+}
+
+.house_F_2 {
+    position: absolute;
+    top: 37%;
+  left: 24%;
+}
+
+.house_F_1 {
+    position: absolute;
+    top: 42%;
+  left: 24%;
+}
+
+.house_E_5 {
+    position: absolute;
+    top: 26.5%;
+  left: 27.5%;
+}
+
+.house_E_6 {
+    position: absolute;
+    top: 32%;
+  left: 27.5%;
+}
+
+.house_E_7 {
+    position: absolute;
+    top: 37%;
+  left: 27.5%;
+}
+
+.house_E_8 {
+    position: absolute;
+    top: 42%;
+  left: 27.5%;
+}
+
+.house_E_4 {
+    position: absolute;
+    top: 26.5%;
+  left: 32%;
+}
+
+.house_E_3 {
+    position: absolute;
+    top: 32%;
+  left: 32%;
+}
+
+.house_E_2 {
+    position: absolute;
+    top: 37%;
+  left: 32%;
+}
+
+.house_E_1 {
+    position: absolute;
+    top: 42%;
+  left: 32%;
+}
+
+.house_D_5 {
+    position: absolute;
+    top: 26.5%;
+  left: 36%;
+}
+
+.house_D_6 {
+    position: absolute;
+    top: 32%;
+  left: 36%;
+}
+
+.house_D_7 {
+    position: absolute;
+    top: 37%;
+  left: 36%;
+}
+
+.house_D_8 {
+    position: absolute;
+    top: 42%;
+  left: 36%;
+}
+
+.house_D_4 {
+    position: absolute;
+    top: 27.5%;
+  left: 40%;
+}
+
+.house_D_3 {
+    position: absolute;
+    top: 33%;
+  left: 40.2%;
+}
+
+.house_D_2 {
+    position: absolute;
+    top: 38%;
+  left: 40.1%;
+}
+
+.house_D_1 {
+    position: absolute;
+    top: 43%;
+  left: 40.1%;
+}
+
+.house_C_3 {
+    position: absolute;
+    top: 35.5%;
+  left: 43.5%;
+}
+
+.house_C_4 {
+    position: absolute;
+    top: 41.5%;
+  left: 43.5%;
+}
+
+.house_C_2 {
+    position: absolute;
+    top: 35.5%;
+  left: 47.2%;
+}
+
+.house_C_1 {
+    position: absolute;
+    top: 42%;
+  left: 47.2%;
+}
+
+.house_B_3 {
+    position: absolute;
+    top: 35.5%;
+  left: 50%;
+}
+
+.house_B_4 {
+    position: absolute;
+    top: 42%;
+  left: 50%;
+}
+
+.house_B_2 {
+    position: absolute;
+    top: 35.5%;
+  left: 53.6%;
+}
+
+.house_B_1 {
+    position: absolute;
+    top: 42%;
+  left: 53.7%;
+}
+
+.house_G_38 {
+    position: absolute;
+    top: 50%;
+  left: 7%;
+}
+
+.house_G_37 {
+    position: absolute;
+    top: 54.5%;
+  left: 7%;
+}
+
+.house_G_36 {
+    position: absolute;
+    top: 58.5%;
+  left: 6.5%;
+}
+
+.house_G_35 {
+    position: absolute;
+    top: 62.5%;
+  left: 6.6%;
+}
+
+.house_G_34 {
+    position: absolute;
+    top: 66.5%;
+  left: 6.5%;
+}
+
+.house_G_33 {
+    position: absolute;
+    top: 70.5%;
+  left: 6%;
+}
+
+.house_G_32 {
+    position: absolute;
+    top: 75.5%;
+  left:  6%;
+}
+
+.house_A_25 {
+    position: absolute;
+    top: 52.2%;
+  left: 14.7%;
+}
+
+.house_A_26 {
+    position: absolute;
+    top: 57%;
+  left: 14.5%;
+}
+
+.house_A_27 {
+    position: absolute;
+    top: 61%;
+  left: 14.5%;
+}
+
+.house_A_28 {
+    position: absolute;
+    top: 65%;
+  left: 14.5%;
+}
+
+.house_A_29 {
+    position: absolute;
+    top: 69%;
+  left: 14%;
+}
+
+.house_A_30 {
+    position: absolute;
+    top: 73%;
+  left: 14%;
+}
+
+.house_A_31 {
+    position: absolute;
+    top: 77.2%;
+  left:  13.7%;
+}
+
+.house_A_24 {
+    position: absolute;
+    top: 52.2%;
+  left:  18%;
+}
+
+.house_A_23 {
+    position: absolute;
+    top: 52.2%;
+  left:  20.8%;
+}
+
+.house_A_22 {
+    position: absolute;
+    top: 52.3%;
+  left:  23.4%;
+}
+
+.house_A_21 {
+    position: absolute;
+    top: 52.8%;
+  left:  26%;
+}
+
+.house_A_5 {
+    position: absolute;
+    top: 54%;
+  left:  67.3%;
+}
+
+.house_A_6 {
+    position: absolute;
+    top: 54%;
+  left:  64.6%;
+}
+
+.house_A_7 {
+    position: absolute;
+    top: 54%;
+  left:  62%;
+}
+
+.house_A_8 {
+    position: absolute;
+    top: 54%;
+  left:  59.5%;
+}
+
+.house_A_9 {
+    position: absolute;
+    top: 54%;
+  left:  57%;
+}
+
+.house_A_10 {
+    position: absolute;
+    top: 54%;
+  left:  54.2%;
+}
+
+.house_A_11 {
+    position: absolute;
+    top: 54%;
+  left:  51.7%;
+}
+
+.house_A_12 {
+    position: absolute;
+    top: 54%;
+  left:  49.2%;
+}
+
+.house_A_13 {
+    position: absolute;
+    top: 54%;
+  left:  46.7%;
+}
+
+.house_A_14 {
+    position: absolute;
+    top: 53.8%;
+  left:  44.1%;
+}
+
+.house_A_15 {
+    position: absolute;
+    top: 53.8%;
+  left:  41.5%;
+}
+
+.house_A_16 {
+    position: absolute;
+    top: 53.5%;
+  left:  39%;
+}
+
+.house_A_17 {
+    position: absolute;
+    top: 53.5%;
+  left:  36.5%;
+}
+
+.house_A_18 {
+    position: absolute;
+    top: 53.5%;
+  left:  33.8%;
+}
+
+.house_A_19 {
+    position: absolute;
+    top: 53.2%;
+  left:  31.3%;
+}
+
+.house_A_20 {
+    position: absolute;
+    top: 53%;
+  left:  28.6%;
+}
+
+.house_A_1 {
+    position: absolute;
+    top: 54%;
+  left:  80.5%;
+}
+
+.house_A_2 {
+    position: absolute;
+    top: 54%;
+  left:  77%;
+}
+
+.house_A_3 {
+    position: absolute;
+    top: 53.8%;
+  left:  72.6%;
+}
+
+.house_A_4 {
+    position: absolute;
+    top: 54%;
+  left:  69.8%;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+  
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo-ex.png" width="120px"></a>
+  </div>
+  <div class="nav-links">
+    
+    <div style="display: inline;">
+    <a href="index.html">HOME</a>
+    </div>
+    
+    <div class="proj" style="display: inline-block;">
+      <a href="project.html">PROJECTS</a>
+    </div>
+
+
+    <div style="display: inline;">
+    <a href="plot_inquire.html">INQUIRE</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="faq.html">FAQ</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="contact.html">CONTACT</a>
+
+    </div>
+  
+  </div>
+  </div>
+
+
+<div class="container">
+  <img src="plots.jpg" style="width:100%;">
+  <img class="house_G_5" src="house.png" style="width: 3%" title="house G5" onclick="display('G5')">
+  <img class="house_G_6" src="house.png" style="width: 3%" title="house G6" onclick="display('G6')">
+  <img class="house_G_7" src="house.png" style="width: 3%" title="house G7" onclick="display('G7')">
+  <img class="house_G_8" src="house.png" style="width: 3%" title="house G8" onclick="display('G8')">
+  <img class="house_G_9" src="house.png" style="width: 3%" title="house G9" onclick="display('G9')">    
+  <img class="house_G_4" src="house.png" style="width: 3%" title="house G4" onclick="display('G4')">
+  <img class="house_G_3" src="house.png" style="width: 3%" title="house G3" onclick="display('G3')">
+  <img class="house_G_2" src="house.png" style="width: 3%" title="house G2" onclick="display('G2')">
+  <img class="house_G_1" src="house.png" style="width: 3%" title="house G1" onclick="display('G1')">
+  <img class="house_F_5" src="house.png" style="width: 3%" title="house F5" onclick="display('F5')">
+  <img class="house_F_6" src="house.png" style="width: 3%" title="house F6" onclick="display('F6')">
+  <img class="house_F_7" src="house.png" style="width: 3%" title="house F7" onclick="display('F7')">
+  <img class="house_F_8" src="house.png" style="width: 3%" title="house F8" onclick="display('F8')">
+  <img class="house_F_4" src="house.png" style="width: 3%" title="house F4" onclick="display('F4')">
+  <img class="house_F_3" src="house.png" style="width: 3%" title="house F3" onclick="display('F3')">
+  <img class="house_F_2" src="house.png" style="width: 3%" title="house F2" onclick="display('F2')">
+  <img class="house_F_1" src="house.png" style="width: 3%" title="house F1" onclick="display('F1')">
+  <img class="house_E_5" src="house.png" style="width: 3%" title="house E5" onclick="display('E5')">
+  <img class="house_E_6" src="house.png" style="width: 3%" title="house E6" onclick="display('E6')">
+  <img class="house_E_7" src="house.png" style="width: 3%" title="house E7" onclick="display('E7')">
+  <img class="house_E_8" src="house.png" style="width: 3%" title="house E8" onclick="display('E8')">
+  <img class="house_E_4" src="house.png" style="width: 3%" title="house E4" onclick="display('E4')">
+  <img class="house_E_3" src="house.png" style="width: 3%" title="house E3" onclick="display('E3')">
+  <img class="house_E_2" src="house.png" style="width: 3%" title="house E2" onclick="display('E2')">
+  <img class="house_E_1" src="house.png" style="width: 3%" title="house E1" onclick="display('E1')">
+  <img class="house_D_5" src="house.png" style="width: 3%" title="house D5" onclick="display('D5')">
+  <img class="house_D_6" src="house.png" style="width: 3%" title="house D6" onclick="display('D6')">
+  <img class="house_D_7" src="house.png" style="width: 3%" title="house D7" onclick="display('D7')">
+  <img class="house_D_8" src="house.png" style="width: 3%" title="house D8" onclick="display('D8')">
+  <img class="house_D_4" src="house.png" style="width: 3%" title="house D4" onclick="display('D4')">
+  <img class="house_D_3" src="house.png" style="width: 3%" title="house D3" onclick="display('D3')">
+  <img class="house_D_2" src="house.png" style="width: 3%" title="house D2" onclick="display('D2')">
+  <img class="house_D_1" src="house.png" style="width: 3%" title="house D1" onclick="display('D1')">  
+  <img class="house_C_3" src="house.png" style="width: 3%" title="house C3" onclick="display('C3')">
+  <img class="house_C_4" src="house.png" style="width: 3%" title="house C4" onclick="display('C4')">
+  <img class="house_C_2" src="house.png" style="width: 3%" title="house C2" onclick="display('C2')">
+  <img class="house_C_1" src="house.png" style="width: 3%" title="house C1" onclick="display('C1')">
+  <img class="house_B_3" src="house.png" style="width: 3%" title="house B3" onclick="display('B3')">
+  <img class="house_B_4" src="house.png" style="width: 3%" title="house B4" onclick="display('B4')">  
+  <img class="house_B_2" src="house.png" style="width: 3%" title="house B2" onclick="display('B2')">
+  <img class="house_B_1" src="house.png" style="width: 3%" title="house B1" onclick="display('B1')"> 
+  <img class="house_G_38" src="house.png" style="width: 3%" title="house G38" onclick="display('G38')">
+  <img class="house_G_37" src="house.png" style="width: 3%" title="house G37" onclick="display('G37')">
+  <img class="house_G_36" src="house.png" style="width: 3%" title="house G36" onclick="display('G36')">
+  <img class="house_G_35" src="house.png" style="width: 3%" title="house G35" onclick="display('G35')">
+  <img class="house_G_34" src="house.png" style="width: 3%" title="house G34" onclick="display('G34')">
+  <img class="house_G_33" src="house.png" style="width: 3%" title="house G33" onclick="display('G33')">
+  <img class="house_G_32" src="house.png" style="width: 3%" title="house G32" onclick="display('G32')">
+  <img class="house_A_25" src="house.png" style="width: 3%" title="house A25" onclick="display('A25')">
+  <img class="house_A_26" src="house.png" style="width: 3%" title="house A26" onclick="display('A26')">
+  <img class="house_A_27" src="house.png" style="width: 3%" title="house A27" onclick="display('A27')">
+  <img class="house_A_28" src="house.png" style="width: 3%" title="house A28" onclick="display('A28')">
+  <img class="house_A_29" src="house.png" style="width: 3%" title="house A29" onclick="display('A29')">
+  <img class="house_A_30" src="house.png" style="width: 3%" title="house A30" onclick="display('A30')">
+  <img class="house_A_31" src="house.png" style="width: 3%" title="house A31" onclick="display('A31')">
+
+  <img class="house_A_1" src="house.png" style="width: 3%" title="house A1" onclick="display('A1')">
+  <img class="house_A_2" src="house.png" style="width: 3%" title="house A2" onclick="display('A2')">
+  <img class="house_A_3" src="house.png" style="width: 3.5%" title="house A3" onclick="display('A3')">
+  <img class="house_A_4" src="house.png" style="width: 3%" title="house A4" onclick="display('A4')">
+  <img class="house_A_5" src="house.png" style="width: 3%" title="house A5" onclick="display('A5')">
+  <img class="house_A_6" src="house.png" style="width: 3%" title="house A6" onclick="display('A6')">
+  <img class="house_A_7" src="house.png" style="width: 3%" title="house A7" onclick="display('A7')">
+  <img class="house_A_8" src="house.png" style="width: 3%" title="house A8" onclick="display('A8')">
+  <img class="house_A_9" src="house.png" style="width: 3%" title="house A9" onclick="display('A9')">
+  <img class="house_A_10" src="house.png" style="width: 3%" title="house A10" onclick="display('A10')">
+  <img class="house_A_11" src="house.png" style="width: 3%" title="house A11" onclick="display('A11')">
+  <img class="house_A_12" src="house.png" style="width: 3%" title="house A12" onclick="display('A12')">
+  <img class="house_A_13" src="house.png" style="width: 3%" title="house A13" onclick="display('A13')">
+  <img class="house_A_14" src="house.png" style="width: 3%" title="house A14" onclick="display('A14')">
+  <img class="house_A_15" src="house.png" style="width: 3%" title="house A15" onclick="display('A15')">
+  <img class="house_A_16" src="house.png" style="width: 3%" title="house A16" onclick="display('A16')">
+  <img class="house_A_17" src="house.png" style="width: 3%" title="house A17" onclick="display('A17')">
+  <img class="house_A_18" src="house.png" style="width: 3%" title="house A18" onclick="display('A18')">
+  <img class="house_A_19" src="house.png" style="width: 3%" title="house A19" onclick="display('A19')">
+  <img class="house_A_20" src="house.png" style="width: 3%" title="house A20" onclick="display('A20')">
+  <img class="house_A_21" src="house.png" style="width: 3%" title="house A21" onclick="display('A21')">
+  <img class="house_A_22" src="house.png" style="width: 3%" title="house A22" onclick="display('A22')">
+  <img class="house_A_23" src="house.png" style="width: 3%" title="house A23" onclick="display('A23')">
+  <img class="house_A_24" src="house.png" style="width: 3%" title="house A24" onclick="display('A24')">
+
+
+
+<script type="text/javascript">
+  
+  function display(value){
+  if(typeof(Storage) !== "undefined"){
+    localStorage.setItem("Selected",value);
+    //document.getElementById("result").innerHTML = localStorage.getItem("Selected");
+    window.location.href = "Inquiry.html"
+  }
+  else{
+    document.getElementById("result").innerHTML = "didn't work";
+  }
+
+}
+
+</script>
+
+
+</body>
+</html>

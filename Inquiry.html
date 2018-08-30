@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Retro Tradecom</title>
+
+  <style type="text/css">
+  
+
+    body {
+      margin: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: black;
+      font-size: 20px;
+    }
+
+    .split{
+      height: 150%;
+      width: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 10;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .left{
+      left: 0;
+      background-color: white;
+    }
+
+    .right{
+      right: 0;
+      background-color: white;
+    }
+
+    .centered{
+      position:absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+
+    .centered img{
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    /*Me*/
+
+    .navbar{
+      overflow: hidden;
+      background-color: #4169e1;
+      width: 100%;
+    }
+
+    .nav-links {
+      float: right;
+      padding: 50px;  
+    }
+
+    .nav-links a {
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+    }  
+
+    .nav-links a:hover{
+      color: #ffae1a;
+      background-color: #0052cc;
+
+    }
+
+    .nav-logo {
+      float: left;
+      padding: 10px;
+      margin-left: 50px;
+    }
+
+    #enquiry_form {
+  background-color: #87ceeb;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 25px
+}
+
+td {
+  padding: 20px;
+  font-size: 20px;
+}
+
+td input{
+  width: 90%
+
+}
+
+#name{
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url("profile.jpg");
+  background-size: 35px;
+  padding-left: 40px;
+  margin-right: 10px;
+  background-color: white;  
+  background-repeat: no-repeat;
+
+}
+
+#phone{
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url("mobile.png");
+  background-size: 35px;
+  padding-left: 40px;
+  margin-right: 10px;
+  background-color: white;  
+  background-repeat: no-repeat;
+
+}
+
+#email{
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url("email.png");
+  background-size: 35px;
+  padding-left: 40px;
+  margin-right: 10px;
+  background-color: white;  
+  background-repeat: no-repeat;
+
+}
+
+#submit{
+  border-radius: 15px;
+
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+  
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo-ex.png" width="120px"></a>
+  </div>
+  <div class="nav-links">
+    
+    <div style="display: inline;">
+    <a href="index.html">HOME</a>
+    </div>
+    
+    <div class="proj" style="display: inline-block;">
+      <a href="project.html">PROJECTS</a>
+    </div>
+
+
+    <div style="display: inline;">
+    <a href="plot_inquire.html">INQUIRE</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="faq.html">FAQ</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="contact.html">CONTACT</a>
+
+    </div>
+  
+  </div>
+  </div>
+
+<div align="center" style="margin-top: 40px">
+<h1>YOU HAVE SELECTED PLOT <span class="plot_selected"><span></h1>
+</div>
+
+
+  <div id="enquiry_form">
+<form>
+  <table align="center" width="100%">
+    
+    <tr>
+      <td align="center" width="50%">Plot Inquired</td>
+      <td align="center"><span class="plot_selected"></span></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input id="name" type="text" name="full_name" placeholder="Enter your name here.."></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input type="tel" id="phone" name="phone" maxlength="10" placeholder="Enter mobile here.. ( optional )"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input id="email" type="email" name="email" placeholder="Enter your email here.."></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="center"><input id="submit" type="submit" onclick="verify()" name="Inquire" value="INQUIRE" style="width: 30%; height: 30px; margin-top: 15px"></td>
+    </tr>
+
+
+  </table>
+</form>
+</div>
+
+
+<script type="text/javascript">
+  
+  document.getElementsByClassName("plot_selected")[0].innerHTML = localStorage.getItem("Selected");
+  document.getElementsByClassName("plot_selected")[1].innerHTML = localStorage.getItem("Selected");
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+
+body {
+  margin: 0px;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #4169e1;
+  width: 100%;
+}
+
+.nav-links {
+  float: right;
+  padding: 50px;  
+}
+
+.nav-links a {
+  padding: 50px;
+  color: white;
+  text-decoration: none;
+}  
+
+.nav-links a:hover{
+  color: #ffae1a;
+  background-color: #0052cc;
+
+}
+
+.nav-logo {
+  float: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+
+
+.container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.house_G_5 {
+    position: absolute;
+    top: 27%;
+	left: 7%;
+}
+
+.house_G_6 {
+    position: absolute;
+    top: 32%;
+	left: 7%;
+}
+
+.house_G_7 {
+    position: absolute;
+    top: 37%;
+	left: 7%;
+}
+
+.house_G_8 {
+    position: absolute;
+    top: 41.5%;
+	left: 7%;
+}
+
+.house_G_9 {
+    position: absolute;
+    top: 45.5%;
+	left: 7%;
+}
+
+.house_G_4 {
+    position: absolute;
+    top: 26.5%;
+	left: 15.5%;
+}
+
+.house_G_3 {
+    position: absolute;
+    top: 32%;
+	left: 15.5%;
+}
+
+.house_G_2 {
+    position: absolute;
+    top: 37%;
+	left: 15.5%;
+}
+
+.house_G_1 {
+    position: absolute;
+    top: 42%;
+	left: 15.5%;
+}
+
+.house_F_5 {
+    position: absolute;
+    top: 26.5%;
+	left: 19.5%;
+}
+
+.house_F_6 {
+    position: absolute;
+    top: 32%;
+	left: 19.5%;
+}
+
+.house_F_7 {
+    position: absolute;
+    top: 37%;
+	left: 19.5%;
+}
+
+.house_F_8 {
+    position: absolute;
+    top: 42%;
+	left: 19.5%;
+}
+
+.house_F_4 {
+    position: absolute;
+    top: 26.5%;
+  left: 24%;
+}
+
+.house_F_3 {
+    position: absolute;
+    top: 32%;
+  left: 24%;
+}
+
+.house_F_2 {
+    position: absolute;
+    top: 37%;
+  left: 24%;
+}
+
+.house_F_1 {
+    position: absolute;
+    top: 42%;
+  left: 24%;
+}
+
+.house_E_5 {
+    position: absolute;
+    top: 26.5%;
+  left: 27.5%;
+}
+
+.house_E_6 {
+    position: absolute;
+    top: 32%;
+  left: 27.5%;
+}
+
+.house_E_7 {
+    position: absolute;
+    top: 37%;
+  left: 27.5%;
+}
+
+.house_E_8 {
+    position: absolute;
+    top: 42%;
+  left: 27.5%;
+}
+
+.house_E_4 {
+    position: absolute;
+    top: 26.5%;
+  left: 32%;
+}
+
+.house_E_3 {
+    position: absolute;
+    top: 32%;
+  left: 32%;
+}
+
+.house_E_2 {
+    position: absolute;
+    top: 37%;
+  left: 32%;
+}
+
+.house_E_1 {
+    position: absolute;
+    top: 42%;
+  left: 32%;
+}
+
+.house_D_5 {
+    position: absolute;
+    top: 26.5%;
+  left: 36%;
+}
+
+.house_D_6 {
+    position: absolute;
+    top: 32%;
+  left: 36%;
+}
+
+.house_D_7 {
+    position: absolute;
+    top: 37%;
+  left: 36%;
+}
+
+.house_D_8 {
+    position: absolute;
+    top: 42%;
+  left: 36%;
+}
+
+.house_D_4 {
+    position: absolute;
+    top: 27.5%;
+  left: 40%;
+}
+
+.house_D_3 {
+    position: absolute;
+    top: 33%;
+  left: 40.2%;
+}
+
+.house_D_2 {
+    position: absolute;
+    top: 38%;
+  left: 40.1%;
+}
+
+.house_D_1 {
+    position: absolute;
+    top: 43%;
+  left: 40.1%;
+}
+
+.house_C_3 {
+    position: absolute;
+    top: 35.5%;
+  left: 43.5%;
+}
+
+.house_C_4 {
+    position: absolute;
+    top: 41.5%;
+  left: 43.5%;
+}
+
+.house_C_2 {
+    position: absolute;
+    top: 35.5%;
+  left: 47.2%;
+}
+
+.house_C_1 {
+    position: absolute;
+    top: 42%;
+  left: 47.2%;
+}
+
+.house_B_3 {
+    position: absolute;
+    top: 35.5%;
+  left: 50%;
+}
+
+.house_B_4 {
+    position: absolute;
+    top: 42%;
+  left: 50%;
+}
+
+.house_B_2 {
+    position: absolute;
+    top: 35.5%;
+  left: 53.6%;
+}
+
+.house_B_1 {
+    position: absolute;
+    top: 42%;
+  left: 53.7%;
+}
+
+.house_G_38 {
+    position: absolute;
+    top: 50%;
+  left: 7%;
+}
+
+.house_G_37 {
+    position: absolute;
+    top: 54.5%;
+  left: 7%;
+}
+
+.house_G_36 {
+    position: absolute;
+    top: 58.5%;
+  left: 6.5%;
+}
+
+.house_G_35 {
+    position: absolute;
+    top: 62.5%;
+  left: 6.6%;
+}
+
+.house_G_34 {
+    position: absolute;
+    top: 66.5%;
+  left: 6.5%;
+}
+
+.house_G_33 {
+    position: absolute;
+    top: 70.5%;
+  left: 6%;
+}
+
+.house_G_32 {
+    position: absolute;
+    top: 75.5%;
+  left:  6%;
+}
+
+.house_A_25 {
+    position: absolute;
+    top: 52.2%;
+  left: 14.7%;
+}
+
+.house_A_26 {
+    position: absolute;
+    top: 57%;
+  left: 14.5%;
+}
+
+.house_A_27 {
+    position: absolute;
+    top: 61%;
+  left: 14.5%;
+}
+
+.house_A_28 {
+    position: absolute;
+    top: 65%;
+  left: 14.5%;
+}
+
+.house_A_29 {
+    position: absolute;
+    top: 69%;
+  left: 14%;
+}
+
+.house_A_30 {
+    position: absolute;
+    top: 73%;
+  left: 14%;
+}
+
+.house_A_31 {
+    position: absolute;
+    top: 77.2%;
+  left:  13.7%;
+}
+
+.house_A_24 {
+    position: absolute;
+    top: 52.2%;
+  left:  18%;
+}
+
+.house_A_23 {
+    position: absolute;
+    top: 52.2%;
+  left:  20.8%;
+}
+
+.house_A_22 {
+    position: absolute;
+    top: 52.3%;
+  left:  23.4%;
+}
+
+.house_A_21 {
+    position: absolute;
+    top: 52.8%;
+  left:  26%;
+}
+
+.house_A_5 {
+    position: absolute;
+    top: 54%;
+  left:  67.3%;
+}
+
+.house_A_6 {
+    position: absolute;
+    top: 54%;
+  left:  64.6%;
+}
+
+.house_A_7 {
+    position: absolute;
+    top: 54%;
+  left:  62%;
+}
+
+.house_A_8 {
+    position: absolute;
+    top: 54%;
+  left:  59.5%;
+}
+
+.house_A_9 {
+    position: absolute;
+    top: 54%;
+  left:  57%;
+}
+
+.house_A_10 {
+    position: absolute;
+    top: 54%;
+  left:  54.2%;
+}
+
+.house_A_11 {
+    position: absolute;
+    top: 54%;
+  left:  51.7%;
+}
+
+.house_A_12 {
+    position: absolute;
+    top: 54%;
+  left:  49.2%;
+}
+
+.house_A_13 {
+    position: absolute;
+    top: 54%;
+  left:  46.7%;
+}
+
+.house_A_14 {
+    position: absolute;
+    top: 53.8%;
+  left:  44.1%;
+}
+
+.house_A_15 {
+    position: absolute;
+    top: 53.8%;
+  left:  41.5%;
+}
+
+.house_A_16 {
+    position: absolute;
+    top: 53.5%;
+  left:  39%;
+}
+
+.house_A_17 {
+    position: absolute;
+    top: 53.5%;
+  left:  36.5%;
+}
+
+.house_A_18 {
+    position: absolute;
+    top: 53.5%;
+  left:  33.8%;
+}
+
+.house_A_19 {
+    position: absolute;
+    top: 53.2%;
+  left:  31.3%;
+}
+
+.house_A_20 {
+    position: absolute;
+    top: 53%;
+  left:  28.6%;
+}
+
+.house_A_1 {
+    position: absolute;
+    top: 54%;
+  left:  80.5%;
+}
+
+.house_A_2 {
+    position: absolute;
+    top: 54%;
+  left:  77%;
+}
+
+.house_A_3 {
+    position: absolute;
+    top: 53.8%;
+  left:  72.6%;
+}
+
+.house_A_4 {
+    position: absolute;
+    top: 54%;
+  left:  69.8%;
+}

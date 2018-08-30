@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Retro Tradecom</title>
+
+  <style type="text/css">
+  
+
+    body {
+      margin: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: black;
+      font-size: 20px;
+    }
+
+    .split{
+      height: 120%;
+      width: 20%;
+      position: absolute;
+      z-index: 1;
+      top: 10;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .left{
+      left: 0;
+      background-color: white;
+    }
+
+    .right{
+      right: 0;
+      background-color: white;
+    }
+
+    .centered{
+      position:absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+
+    .centered img{
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    /*Me*/
+
+    .navbar{
+        margin-bottom: 0;
+          border-radius: 0;
+          background-color: black;
+          color: white;
+          padding: 3% 0;
+          font-size: 1.0em;
+          border: 0;
+     
+    }
+
+    .nav-links {
+      float: right;
+      padding: 0px;  
+    }
+
+    .nav-links a {
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+    }  
+
+    .nav-links a:hover{
+      color: #ffae1a;
+      background-color: black;
+
+    }
+
+    .nav-logo {
+      float: left;
+      padding: 0px;
+      margin-left: 35px;
+    }
+
+    .about_container{
+  position: relative;
+  margin-bottom: 27px;
+        
+
+}
+
+  
+.About {
+  position: absolute;
+  font-size: 20px;
+  top: 125px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+}
+
+.vals {
+  position: absolute;
+  left: 20px;
+  height: 130px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px; 
+  font-size: 16px;
+}
+
+.vals:hover {
+  color: orange;
+  background-color: black;
+}
+
+
+.goals {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  height: 130px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px; 
+  font-size: 16px;
+}
+
+.goals:hover {
+  color: orange;
+  background-color: black;
+}
+
+.hist {
+  position: absolute;
+  left: 270px;
+  top: 170px;
+  height: 130px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px; 
+  font-size: 16px;
+}
+
+.hist:hover {
+  color: orange;
+  background-color: black;
+}
+
+.achs {
+  position: absolute;
+  top: 315px;
+  left: 170px;
+  height: 130px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px; 
+  font-size: 16px;
+}
+
+.achs:hover {
+  color: orange;
+  background-color: black;
+}
+
+#AboutText {
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  margin: 50px;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+  
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo-ex.png" width="120px"></a>
+  </div>
+  <div class="nav-links">
+    
+    <div style="display: inline;">
+    <a href="index.html">HOME</a>
+    </div>
+    
+   
+    <div class="proj" style="display: inline-block;">
+      <a href="project.html">PROJECTS</a>
+    </div>
+
+
+    <div style="display: inline;">
+    <a href="plot_inquire.html">INQUIRE</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="faq.html">FAQ</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="contact.html">CONTACT</a>
+
+    </div>
+  
+  </div>
+  </div>
+
+<div class="slider" align="center">
+  <img class="mySlides" src="1.jpg" style="width:72%;height: 550px">
+  <img class="mySlides" src="2.jpg" style="width:72%;height: 550px">
+  <img class="mySlides" src="3.jpg" style="width:72%;height: 550px">
+</div>
+
+<br>
+
+<div class="about_container">
+
+<p class = "vals" onclick="display(0)">CORE VALUES</p>
+<p class = "goals" onclick="display(1)">GOALS</p>
+<p class = "hist" onclick="display(2)">HISTORY</p>
+<p class = "achs" onclick="display(3)">ACHIEVEMENTS</p>
+<p class = "About">ABOUT US</p>
+
+<div id="AboutText" align="center">
+  Among many, the two beliefs we have always tried to uphold was to give maximum comfort and satisfaction to our clients and to be true to ourselves. 
+</div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
+
+  var a = ["Among many, the two beliefs we have always tried to uphold was to give maximum comfort and satisfaction to our clients and to be true to ourselves.",
+      "Away from the noise and conflicts of the city life, we aspire to give our clients the finest possible and secure environment to live in, with all kinds of amenities and facilities.",
+      "It all started in 2012, with a property in South West Kolkata, Behala, India. In the recent years, under the guidance of highly esteemed and renowned Balaji group of professionals, we have been making developments in Sirakole, West Bengal (319 decimal) and in 17A Thakurtala Lane, Sakher Bazar which will be a multistoried building project, the first of many.",
+      "We are working under the Balaji Group, which is 9001 certified. We are also the Lead Sponsor for the Amitabh Bachchan night in Princeton Club."]
+
+  function display(b){
+    document.getElementById("AboutText").innerHTML = a[b];
+  }
+
+</script>
+</body>
+</html>

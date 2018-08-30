@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Retro Tradecom</title>
+
+<style type="text/css">
+  
+
+body {
+  margin: 0px;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #4169e1;
+  width: 100%;
+}
+
+.nav-links {
+  float: right;
+  padding: 50px;  
+}
+
+.nav-links a {
+  padding: 50px;
+  color: white;
+  text-decoration: none;
+}  
+
+.nav-links a:hover{
+  color: #ffae1a;
+  background-color: #0052cc;
+
+}
+
+.nav-logo {
+  float: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+
+.proj-drop {
+  display: none;
+  background-color: white;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.proj:hover .proj-drop{
+  display: block;
+}
+
+.proj-drop a{
+  padding: 0px;
+  margin: 0px;
+  color: black;
+}
+
+.proj-drop a:hover{
+  color: black;
+  background-color: white;
+}
+
+</style>
+
+
+</head>
+<body>
+
+  <div class="navbar">
+  
+  <div class="nav-logo">
+    <a href="#HOME"><img src="logo-ex.png" width="120px"></a>
+  </div>
+  <div class="nav-links">
+    
+    <div style="display: inline;">
+    <a href="index.html#HOME">HOME</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="index.html#ABOUT">ABOUT</a>
+    </div>
+    
+    <div class="proj" style="display: inline-block;">
+      <a href="">PROJECTS</a>
+      <div class="proj-drop" style="position: absolute; margin-top: 25px;" align="center">
+        <a href=""><p>SIRAKOL</p></a>
+      </div>
+    </div>
+
+
+    <div style="display: inline;">
+    <a href="plot_table.html">INQUIRE</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="">FAQ</a>
+    </div>
+    
+    <div style="display: inline;">
+    <a href="contact.html">CONTACT</a>
+
+    </div>
+  
+  </div>
+  </div>
+
+<div class="slider" align="center">
+  <img class="mySlides" src="1.jpg" style="width:100%;height: 550px">
+  <img class="mySlides" src="2.jpg" style="width:100%;height: 550px">
+  <img class="mySlides" src="3.jpg" style="width:100%;height: 550px">
+</div>
+
+<h2 align="center" id="ABOUT" style="padding-top: 75px; font-size: 35px">ABOUT US</h2>
+
+<p style="padding: 100px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies placerat justo vitae pharetra. Praesent at enim non neque pretium ultricies a elementum eros. Nunc quam tellus, commodo eget rutrum eu, mattis convallis massa. Sed pharetra, dolor non faucibus lacinia, purus dui porttitor turpis, ac pulvinar nunc lectus ac urna. Suspendisse odio augue, feugiat vel eros ac, fermentum dictum odio. Suspendisse suscipit pellentesque auctor. Ut maximus, purus sed vulputate sagittis, est ligula ullamcorper ex, vel bibendum metus urna vitae enim.
+<br />
+<br />
+Integer eu eros risus. Donec sed sollicitudin ligula, vitae pretium nulla. Sed ultricies turpis vitae nibh commodo congue. Vestibulum bibendum non felis eu hendrerit. Aliquam at ultrices ante. Mauris commodo gravida eros non vulputate. Curabitur et sapien in lectus malesuada luctus vel eu neque. Suspendisse et sodales libero. Phasellus accumsan augue eget lorem suscipit, id fringilla sapien mattis.
+<br />
+<br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies placerat justo vitae pharetra. Praesent at enim non neque pretium ultricies a elementum eros. Nunc quam tellus, commodo eget rutrum eu, mattis convallis massa. Sed pharetra, dolor non faucibus lacinia, purus dui porttitor turpis, ac pulvinar nunc lectus ac urna. Suspendisse odio augue, feugiat vel eros ac, fermentum dictum odio. Suspendisse suscipit pellentesque auctor. Ut maximus, purus sed vulputate sagittis, est ligula ullamcorper ex, vel bibendum metus urna vitae enim.
+<br />
+<br />
+Integer eu eros risus. Donec sed sollicitudin ligula, vitae pretium nulla. Sed ultricies turpis vitae nibh commodo congue. Vestibulum bibendum non felis eu hendrerit. Aliquam at ultrices ante. Mauris commodo gravida eros non vulputate. Curabitur et sapien in lectus malesuada luctus vel eu neque. Suspendisse et sodales libero. Phasellus accumsan augue eget lorem suscipit, id fringilla sapien mattis.
+</p>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
